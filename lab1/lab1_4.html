@@ -22,8 +22,6 @@
 		<p>Элемент <code>img</code> внедряет изображение в текущий документ в месте определения элемента. Элемент <code>img</code> не имеет 
             содержимого — он замещается на ходу изображением, указанным в атрибуте <code>src</code>.</p>
 
-			1. черепашка
-			<code>aquaria</code>.</p>
 		<h2>Альтернативный текст</h2>
 		<p>Атрибут <code>alt</code> предоставляет краткое описание изображения. Он содержит альтернативный текст, который отображается, если изображение 
             не может быть выведено. Пользовательские агенты должны отображать альтернативный текст, если они не поддерживают изображения, 
@@ -60,3 +58,50 @@
 	</section>
 </body>
 </html>
+<figure> 
+  <img src="images/aquaria.jpg" alt="Атлантическая черепаха Ридли"
+  width="300" height="225">
+  <figcaption>Рисунок 1 "Черепаха" </figcaption>
+ </figure>
+ <figure> 
+  <img src="images/globus.gif" alt="Вращающийся глобус"
+  width="200" height="200">
+  <figcaption>Рисунок 2 "Глобус" </figcaption>
+ </figure>
+ <figure>
+  <img
+  src="images/html5-logo.png"
+  srcset="images/html5-logo.svg"
+  alt="Логотип HTML"
+  width="300" height="225">
+  <figcaption>Рисунок 3 "Логотип HTML" </figcaption>
+ </figure>
+ <figure> 
+  <img src="images/light.gif" alt="Горщая свеча"
+  width="122" height="200">
+  <figcaption>Рисунок 1 "Свеча" </figcaption>
+ </figure>
+ <figure>
+  <img 
+   src="images/mushroom.jpg"
+   srcset="
+    images/mushroom_landscape.jpg 600w,
+    images/mushroom_portrait.jpg 300w,
+    images/mushroom_retina.jpg 1200w"
+   sizes="
+    (max-width: 600px) 300px,
+    (max-width: 300px) 200px,
+    600px"
+   alt="Лесной гриб">
+  <figcaption>Рисунок 4 "Гриб" </figcaption>
+ </figure>
+ <figure> 
+  <img src="images/redcat.jpg" alt="Бело-рыжий кот"
+  width="500" height="375">
+  <figcaption>Рисунок 5 "Кот" </figcaption>
+ </figure>
+ <figure> 
+  <img src="images/slon.png" alt="Нарисованный радостный слон"
+  width="300" height="225">
+  <figcaption>Рисунок 6 "Слон" </figcaption>
+ </figure>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Кодировка документа -->
+  <meta charset="utf-8">
+  <!-- Заголовок страницы -->
+  <title>Маркетинг в социальных сетях для бизнеса | Bussines.ru</title>
+  <!-- Подключения таблицы стилей Bootstrap 3 -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- Подключение темы со стилями Bootstrap 3 -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+  <!-- Подключение таблицы стилей иконок Awesome -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <!-- Подключение таблицы стилей, в которой будем прописывать свои стили -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Подключение библиотеки jQuery для работы скриптов Bootstrap 3 -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <!-- Подключение скриптов Bootstrap 3 -->
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Основное содержимое страницы -->
+
+ <!-- Основной контейнер -->
+<div class="container">
+    <!-- "Шапка" сайта -->
+    <header style="padding-top:5px;">
+        <div id="logo" style="float:left">
+            <img src="images/logo.png" width="75" height="75" alt="Логотип сайта">
+        </div>
+        <div id="contacts" style="float:right">
+            <!--Элемент i служит для вывода иконки Awesome с именем fa-mobile -->
+            <i class="fa fa-mobile fa-lg"></i> +7-666-11-26 |
+            <i class="fa fa-envelope fa-lg"></i> pochta.contact@somemail.ru
+            <!--CSS свойство margin-left задает отступ 10px слева от предыдущего элемента-->
+            <!--CSS свойство color задает цвет элементу i-->
+            <!-- <i class="fa fa-facebook-square fa-2x" style="margin-left:10px; color: blue;"></i> -->
+        </div>
+        <div class="clearfix"></div>
+    </header>
+    <!-- Навигационное меню -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-menu">
+            <ul class="nav navbar-nav">
+                <!-- Активный пункт меню "Главная" -->
+                <li class="active"><a href="#">Главная</a></li>
+                <!-- Пункт меню "О компании" -->
+                <li><a href="#main">О компании</a></li>
+                <!-- Пункт меню "Наш метод" -->
+                <li><a href="#method">Наши методы</a></li>
+                <!-- Пункт меню "Наши проекты" -->
+                <li><a href="#work">Наши проекты</a></li>
+            </ul>
+            <!-- Список, выровненный по правому краю -->
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Пункт меню "Бесплатная консультация" -->
+                <li><a  href="#" style="padding-top:8px; padding-bottom:8px;">
+                    <span class="btn btn-danger"><strong>Бесплатная консультация</strong></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Нижняя часть "шапки" сайта -->
+    <div id="header-bottom" style="position:relative;">
+        <img src="images/banner.jpg" style="width:100%;" alt="Баннер">
+            <!--Положение элемента зададим свойством top от верхнего края со значением 10% от высоты элемента header-bottom.-->
+        <div id="bannertext" style="position:absolute; top:10%; width:100%; text-align:center; color:white;" >
+        <!-- Здесь будет текст с кнопкой ...-->
+            <div class="hidden-xs">
+                <h1>Я предлагаю<br>
+                    <small style="color: white;">выяснить, как сделать текст на белом фоне видным</small>
+                </h1>
+             </div>
+             <div class="hidden-sm hidden-md hidden-lg">
+                <p class="lead">Мы предлагаем маркетинг в социальных сетях для бизнеса</p>
+            </div>
+             <!-- Кнопка "Бесплатная консультация" -->
+            <a class="btn btn-danger btn-lg">Помогите</a>
+        </div>
+    </div>
+    <!-- Блок об услугах компании -->  
+
+    <div id="main">
+        <!-- Задаем новый ряд, с выравниванием текста внутри него по центру с помощью CSS свойства text-align -->
+        <div class="row" style="text-align:center;">
+            <!-- Создаём заголовок h2 с текстом "О компании" -->
+            <h2>О компании</h2>
+            <!-- Создаем более крупный размер шрифта по сравнению с остальным текстом с помощью класса Bootstrap 3 "lead" -->
+            <p class="lead">Наши основные услуги</p>
+            <!-- Создаем горизонтальную линию -->
+            <hr>
+            <!-- Создаем блок, состоящий из 4 колонок Bootstrap 3 -->
+            <div class="col-md-4">
+                <!-- Отображаем изображение img-1.png -->
+                <img src="images/VK_Logo.png" width="120" height="120" alt="Лого ВК">
+                <!-- Создаём заголовок внутри колонки -->
+                <h3>Маркетинг ВК</h3>
+                <!-- Абзац с текстом -->
+                <p>ВКонтакте насчитывает более 10 пользователей. Моя компания занимается изучением этой аудитории
+                    для продвижения странных идей в виде брендированных страниц и рекламы. Я сделаю всё, что будет сделать не лень для
+                    процветания ваших идей.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/Page_Logo.png" width="120" height="120" alt="Картинка листочка">
+                <h3>Создание страниц</h3>
+                <p>Страницы - это такие области двухмерного пространства, содержащие в себе
+                    разнообразную информацию: текст, картинки, видео, ну и всякое такое. 
+                    Вот такое можно в целом создавать.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/Red_Logo.png" width="120" height="120" alt="Картинка рекламы">
+                <h3>Управление рекламой</h3>
+                <p>Рекламой управлять я совершенно не умею. Но это и не входит в рамки моей специальности. 
+                    И в рамки данной лабораторной работы тоже. Поэтому, я думаю, можно не обращать внимания на рекламу. 
+                    Сделаем вид, что с рекламой всё в порядке.<br>(Не является публичной офертой).</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="method">
+        <!-- Создание ряда, с выравниванием текста внутри блока по центру и заполнением фона цветом #f3f3f3 -->
+        <div class="row" style="text-align:center; background:#f3f3f3;">
+            <!-- Создание заголовка h2 -->
+            <h2>Наши методы</h2>
+            <!-- Создание текста под заголовком -->
+            <p class="lead">Наш метод - шаг за шагом (как я это вообще делаю)</p>
+            <!-- Создание горизонтальной линии -->
+            <hr>
+            <!-- Создание 1 блока -->
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+                background: #FFF; border-radius: 3px; display: flow-root;">
+                <!-- display: flow-root автоматически очищает внутренние float элементы -->
+            
+                <li class="list1_img" style="float:left; width: 36%;">
+                    <img src="images/pic1.jpg" class="img-responsive" alt="очередная картинка с примером">
+                </li>
+                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;">
+                    <h3>Шаг 1: Выяснение</h3>
+                    <p>Удается выяснить, что поздно вечером желание писать оригинальный текст-заполнитель
+                         к каждой секции сайта хоть и весело, но быстро надоедает.
+                         А время назад не повернёшь, не восполнишь. Так что дальше будет просто копия с сайта с инструкцией.</p>
+                </li>
+            </ul>
+            <!-- Создание 2 блока -->
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+    background: #FFF; border-radius: 3px; display: flow-root;">
+                <li class="list1_img" style="float:left; width: 36%;">
+                    <img src="images/pic2.jpg" class="img-responsive" alt="очередная картинка с примером">
+                </li>
+                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;">
+                    <h3>Шаг 2: Название заголовка 2</h3>
+                    <p>Мы используем инвестиционный метод, который заключается в комплексном анализе вашего бизнеса для его
+                        продвижения. Мы начинаем с изучения преимуществ Вашей компании перед конкурентами. Составляет
+                        несколько бизнес-планов на усмотрения заказчика и контролируем весь процесс.</p>
+                </li>
+            </ul>
+            <!-- Создание 3 блока -->
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+    background: #FFF; border-radius: 3px; display: flow-root;">
+                <li class="list1_img" style="float:left; width: 36%;">
+                    <img src="images/pic3.jpg" class="img-responsive" alt="очередная картинка с примером">
+                </li>
+                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;">
+                    <h3>Шаг 3: Название заголовка 3</h3>
+                    <p>Мы используем инвестиционный метод, который заключается в комплексном анализе вашего бизнеса для его
+                        продвижения. Мы начинаем с изучения преимуществ Вашей компании перед конкурентами. Составляет
+                        несколько бизнес-планов на усмотрения заказчика и контролируем весь процесс.</p>
+                </li>
+            </ul>
+            <!-- Создание 4 блока -->
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+    background: #FFF; border-radius: 3px; display: flow-root;">
+                <li class="list1_img" style="float:left; width: 36%;">
+                    <img src="images/pic4.jpg" class="img-responsive" alt="очередная картинка с примером">
+                </li>
+                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;">
+                    <h3>Шаг 4: Название заголовка 4</h3>
+                    <p>Мы используем инвестиционный метод, который заключается в комплексном анализе вашего бизнеса для его
+                        продвижения. Мы начинаем с изучения преимуществ Вашей компании перед конкурентами. Составляет
+                        несколько бизнес-планов на усмотрения заказчика и контролируем весь процесс.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="work">
+        <!-- Создание ряда, с выравниванием текста внутри блока .row по центру и заполнением фона цветом #f35e59 -->
+        <div class="row" style="text-align:center; background:#f35e59; color:#fff;">
+            <!-- Создание заголовка 2 уровня -->
+            <h2>Наши проекты</h2>
+            <!-- Создание дополнительного текста под заголовком -->
+            <p class="lead">Наши избранные работы</p>
+            <!-- Создание горизонтальной полосы -->
+            <hr>
+                <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+    background: #FFF; border-radius: 3px; color:black; display: flow-root;">
+                    <!-- Создание элемента с позиционированием по левому краю, шириной блока 20% от ширины родительского элемента и минимальной шириной 100px -->
+                    <li class="list1_desc" style="float:left; width:20%; min-width:100px;">
+                        <!-- Создание внутри левого блока заголовка 3 уровня -->
+                        <h3>Название фирмы</h3>
+                    </li>
+                    <!-- Создание элемента с позиционированием по левому краю относительно предыдущего элемента, шириной элемента 75% от ширины родительского элемента и отступом слева от предыдущего элемента равным 1em -->
+                    <li class="list1_img" style="float:left; width: 75%; margin-left:1em;">
+                        <!-- Отображение изображения w1.png -->
+                        <img src="images/w1.jpg" width="450" class="img-responsive" alt="очередная картинка с примером">
+                    </li>
+                    <!-- Блок для очистки потока и правильного отображения последующих блоков -->
+                </ul>
+                    <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+    background: #FFF; border-radius: 3px; color:black; display: flow-root;">
+                        <li class="list1_desc" style="float:left; width:20%; min-width:100px;">
+                            <h3>Название фирмы 2</h3>
+                        </li>
+                        <li class="list1_img" style="float:left; width: 75%; margin-left:1em;">
+                            <img src="images/w2.jpg" width="450" class="img-responsive" alt="очередная картинка с примером">
+                        </li>
+                    </ul>
+                        <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+    background: #FFF; border-radius: 3px; color:black; display: flow-root;">
+                            <li class="list1_desc" style="float:left; width:20%; min-width:100px;">
+                                <h3>Название фирмы 3</h3>
+                            </li>
+                            <li class="list1_img" style="float:left; width: 75%; margin-left:1em;">
+                                <img src="images/w3.jpg" width="450" class="img-responsive" alt="очередная картинка с примером">
+                            </li>
+                        </ul>
+        </div>
+    </div>
+</div>
+<!-- Подвал сайта -->
+<footer>
+    <!-- Текст внутри блока выровнен по правому краю. Цвет фона блока #2a2a2a, значения полей от блока до его содержимого равно 1em, цвет текста внутри блока белый (#fff) -->
+    <div style="text-align:right; background:#2a2a2a; padding:1em; color: #fff;">
+        <div><img src="images/reserved.jpg" width="45" alt="так прост"></div>
+        © Bussines.ru <br>2010-2014
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,56 +1,41 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Использование float при построении колонок</title>
+    <title>Колонки через Flexbox</title>
     <style>
-        #left {
-            background: #ccf;
-            width: 200px;
-            box-sizing: border-box;
-            display: inline-block;
+        .container {
+            display: flex;          
         }
 
-        #right {
-            background: #fcc;
-            width: 200px;
+        #left {
+            background: rgb(140, 140, 225);
             box-sizing: border-box;
-            display: inline-block;
-            vertical-align: top;
+            padding: 10px;
+            width: 200px;                    
         }
 
         #center {
-            background: #cfc;
-            width: 600px;
+            background: rgb(39, 173, 39);
             box-sizing: border-box;
-            display: inline-block;
-            vertical-align: top;
+            padding: 10px;
+            flex: 1;                
         }
 
-        .wrapper {
-            margin: 0 auto;
-            width: 1000px;
-            display: flex;
+        #right {
+            background: rgb(154, 1, 1);
+            box-sizing: border-box;
+            padding: 10px;
+            width: 200px;  
+            text-align: right;                
         }
     </style>
 </head>
-
 <body>
-    <div class="wrapper">
+    <div class="container">
         <div id="left">left<br>left<br>left<br>left<br>left</div>
-        <div id="center">
-            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Составитель вдали наш
-            предупредила вскоре, гор алфавит свое текста жизни великий одна семантика она, до пор эта дал ты имени свою злых
-            рекламных он о. Дорогу коварных строчка курсивных толку всемогущая, жизни гор, рыбного, своего ipsum проектах
-            переписали. Продолжил сих жизни щеке рукописи великий если маленькая себя, несколько использовало города взгляд
-            ipsum своего, образ заглавных решила домах. Это если своих грамматики, власти текста над точках речью рукописи
-            рот одна на берегу пустился ipsum, скатился ведущими живет имеет? Океана, страну о продолжил всеми но ее
-            проектах напоивший на берегу даже, реторический назад которое.
-        </div>
+        <div id="center">center text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</div>
         <div id="right">right<br>right<br>right<br>right</div>
     </div>
 </body>
-
 </html>

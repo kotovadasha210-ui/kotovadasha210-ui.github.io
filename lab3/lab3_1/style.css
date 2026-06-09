@@ -4,17 +4,17 @@ body {
   line-height: 2rem;
   font-family: "Arial", sans-serif;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #000000fe;
   text-align: right;
 }
 
 h1, h2, h3 {
     font-family: sans-serif;
-    color: red;
+    color: rgb(240, 31, 118);
 }
 
 em {
-    color: green;
+    color: rgb(125, 42, 250);
 }
 
 .wrapper {
